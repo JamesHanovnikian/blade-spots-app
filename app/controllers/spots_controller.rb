@@ -1,21 +1,29 @@
 class SpotsController < ApplicationController
   def index
-    spots = Spot.all
-    render json: spots.as_json
+    if current_user
+      spots = Spot.all
+      render json: spots.as_json
+    else
+      render json: { message: "User must be logged in to view all Spots" }
+    end
   end
 
   def create
-    spot = Spot.new(
-      name: params[:name],
-      address: params[:address],
-      bust: params[:bust],
-      description: params[:description],
-      category: params[:category],
-      user_id: params[:user_id],
-      image_url: params[:image_url],
-    )
-    spot.save
-    render json: spot.as_json
+    if current_user
+      spot = Spot.new(
+        name: params[:name],
+        address: params[:address],
+        bust: params[:bust],
+        description: params[:description],
+        category: params[:category],
+        user_id: current_user.id,
+        image_url: params[:image_url],
+      )
+      spot.save
+      render json: spot.as_json
+    else
+      render json: { message: "User must be logged in to add a new spot" }
+    end
   end
 
   def show

@@ -6,7 +6,7 @@ class TricksController < ApplicationController
 
   def create
     trick = Trick.new(
-      user_id: params[:user_id],
+      user_id: current_user.id,
       content: params[:content],
       spot_id: params[:spot_id],
     )

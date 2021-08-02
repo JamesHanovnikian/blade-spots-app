@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
   def create
     comment = Comment.new(
       spot_id: params[:spot_id],
-      user_id: params[:user_id],
+      user_id: current_user.id,
       content: params[:content],
 
     )
