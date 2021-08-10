@@ -13,4 +13,9 @@ class TricksController < ApplicationController
     trick.save
     render json: trick.as_json
   end
+
+  def show
+    trick = Trick.find_by(id: params[:id])
+    render json: trick.as_json
+  end
 end
