@@ -10,7 +10,7 @@ class SpotsController < ApplicationController
 
   def create
     if current_user
-
+      results = Geocoder.search("Highland Park")
       spot = Spot.new(
         name: params[:name],
         address: params[:address],
