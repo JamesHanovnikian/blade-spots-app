@@ -1,6 +1,6 @@
 class TricksController < ApplicationController
   def index
-    tricks = Trick.all
+    tricks = Trick.where(spot_id: params[:spot_id])
     render json: tricks.as_json
   end
 

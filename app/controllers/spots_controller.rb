@@ -10,7 +10,9 @@ class SpotsController < ApplicationController
 
   def create
     if current_user
-      results = Geocoder.search("Highland Park")
+      results = Geocoder.search(params[:address])
+      the_latitude = results.first.coordinates[0]
+      the_longitude = results.first.coordinates[1]
       spot = Spot.new(
         name: params[:name],
         address: params[:address],
@@ -19,13 +21,11 @@ class SpotsController < ApplicationController
         category: params[:category],
         user_id: current_user.id,
         image_url: params[:image_url],
-
+        latitude: the_latitude,
+        longitude: the_longitude,
       )
       spot.save
-      render json: {
-        data: spot.as_json,
-        mapbox: response.parse(:json),
-      }
+      render json: spot.as_json
     else
       render json: { message: "User must be logged in to add a new spot" }
     end

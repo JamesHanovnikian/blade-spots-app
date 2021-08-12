@@ -5,6 +5,10 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  resources :spots do
+    resources :tricks
+  end
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   #  ******       SPOTS ROUTES         *******
@@ -19,13 +23,13 @@ Rails.application.routes.draw do
 
   #************** TRICKS ROUTES *****************
 
-  get "/tricks" => "tricks#index"
-  post "/tricks" => "tricks#create"
-  get "/tricks/:id" => "tricks#show"
+  get "/spots/:spot_id/tricks" => "tricks#index"
+  post "/spots/:spot_id/tricks" => "tricks#create"
+  get "/spots/:spot_id/tricks/:id" => "tricks#show"
 
   #**************** COMMENT ROUTES ****************
 
-  get "/comments" => "comments#index"
-  post "/comments" => "comments#create"
+  get "/spots/:spot_id/comments" => "comments#index"
+  post "/spots/:spot_id/comments" => "comments#create"
   get "/comments/:id" => "comments#show"
 end
