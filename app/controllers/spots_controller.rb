@@ -10,6 +10,9 @@ class SpotsController < ApplicationController
 
   def create
     if current_user
+      # response = Cloudinary::Uploader.upload(params[:image], resource_type: :auto)
+      # cloudinary_url = response["secure_url"]
+
       results = Geocoder.search(params[:address])
       the_latitude = results.first.coordinates[0]
       the_longitude = results.first.coordinates[1]
