@@ -19,9 +19,12 @@ gem 'jwt'
 gem 'rack-cors'
 gem "http"
 gem 'geocoder'
-
+gem 'google-cloud-storage'
+gem 'aws-sdk-s3'
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'cloudinary'
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false

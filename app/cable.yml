@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "majestic-energy-322818",
+  "private_key_id": "d107e1868cbad678d0248341f82a3b35df148eb8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCr3wR9glnwr3n9\nMnDgChMM8cv4yXoLbQERfYvJvVRAubFi4qI8rIer0cFFu4i3MoBwnTbsOKJnsOcc\nEB0U/zLJCxagba47OV/QFWIbWBiF5VTj8VmSvj6r3XrfaTh5SgI2YDxrFHM/ofg0\nBJw35I4qpTC+iwLkYxlIG6I3mPqI2YYZxW5G0KqumMrVFDodF5M+jMvTULmSGSkA\nEKa1KfvLY6xrQYy1TiCtp0MDZwZEJdqfGUurCRNy+JSNj727HvjyQhjmIQdZX2Ai\nYlwvxwvubIHapTAeMKBSnVgO6gNwUqUMnyg0mfz/hPfH+u9oHNNpSY1Nu/NbO8Jo\nSQm35cvRAgMBAAECgf9FVYTSluTQDBJ2ZHISUNmJPcUUUgIwGcw5GnWodeX+Ed70\nV5d2q7VxF/MyT9+1vqCeCmyUg3UZHGvuYzAzprN3neYYLWPoVbngd7OrZoxNRt5K\nX17w6R2iPaGBnXoPW4vL/DFXPii552+X7gc7zivI3bBPXo3/79XMPgRCAeVxSMjp\n3PSqxZWI/9ENLpte4tepM/fdcFFHkRM77t+9ERO56DglyPB4Eo34y+3O0197s0z2\nW3INOkwU2bGX7HOGil/BcvRjvk9hH/ENbHPbGoifZtzBOZEjGUoRujMLgbVb9NOv\nrwmCkQv9NNkXrGKfHd0+8TuqHk65WafGqsnkL3ECgYEA8SdVlR2Kd2PIH6/24/j+\nTguctQ3lPdZSId3A4wHG4Si5pfvXbdfygluK4rQjfkIl3tu53153eqgC0paEitds\nUt+OISGM91aRrpirZck1+ORID9mP5HniiB7ocE/0dPm0LO8AQWQrbhkHmFTiH83K\nZCNkhu+m6eSfRViv7+TWXikCgYEAtnPEXVnBhSFLU2dWqmEzr1GTIvej/ET9xnCj\n9FIuLWpeYNYoezEjIvoJvFQfHC33E3gz8nEV/+bk9oswRUg6wxXEl4Wz/8VoLgtc\npjUlQLEBN85JaNhGTyV4keek/E7I+X0POVD07Jq6r3pNqORqyUP0TeaUlwAuEMzQ\nY9abZWkCgYEApixcpOw+RhbUCEHQ9zbUxiLqUTjKBtpwrjWIfOT0jqLpip8HzAFK\nctlx0tYevxoFzpPKeUk3O6Yai9J8ctAPLOwvnFTqNmXI7W72bKVCM8fagFGC/gWf\nO/1QXlQ6N4D5zxzCKE1GQA+vVCDp0NCV7nsVAoaRlgqcVcTPN5eQwEECgYBS/WGK\nXLNLzRMoQs8G/OO3kVFuDFqI+xC73KyXC3J5sfJv9bnAH1+uHzGielkURkwmjPyE\nALBTEEGBa1pviSVBa3tauLRhWPfESeLAr1fcjybQrYJysD167r5jD4zaPzPnV90+\n4vYlUVQtUWJVumBgYAqWDJX2AVzyw1bestVIUQKBgArYEZjuJY4v4WDsEvci1RBc\nFaDGtP+9+IJzKEkRKwjQeTZ/NvgNjmQ1URfLROLLunfiexnVfT8quq4A6syiAu0e\nsY+QAhT2oZvUNSzb5NZ9XCt1d2JyY8HSuNhBa6iulUZ+oj02sorUracOXe6uaanh\nU8BbJzTZyXG56YhB5tDj\n-----END PRIVATE KEY-----\n",
+  "client_email": "farmerandcook24@majestic-energy-322818.iam.gserviceaccount.com",
+  "client_id": "103746918453970364593",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/farmerandcook24%40majestic-energy-322818.iam.gserviceaccount.com"
+}
