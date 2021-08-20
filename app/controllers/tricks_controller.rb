@@ -1,7 +1,7 @@
 class TricksController < ApplicationController
   def index
     tricks = Trick.where(spot_id: params[:spot_id])
-    render json: tricks.as_json
+    render json: tricks
   end
 
   def create
@@ -11,7 +11,14 @@ class TricksController < ApplicationController
       spot_id: params[:spot_id],
     )
     trick.save
-    render json: trick.as_json
+    render json: {
+      "user_id": trick.user_id,
+      "content": trick.content,
+      "spot_id": trick.spot_id,
+      "created_at": trick.created_at,
+      "updated_at": trick.updated_at,
+      "username": trick.user.username,
+    }
   end
 
   def show

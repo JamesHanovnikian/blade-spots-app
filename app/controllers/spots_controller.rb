@@ -26,6 +26,7 @@ class SpotsController < ApplicationController
         image_url: params[:image_url],
         latitude: the_latitude,
         longitude: the_longitude,
+        # image: cloudinary_url,
       )
       spot.save
       render json: spot.as_json

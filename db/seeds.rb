@@ -45,7 +45,7 @@ spot.save
 spot = Spot.new(
   name: "Techny Skate Park",
   address: "1750 Techny Rd, Northbrook, IL 60062",
-  bust: "low",
+  bust: "low"
   description: "Big concrete park with mostly bowls",
   user_id: 3,
 )
