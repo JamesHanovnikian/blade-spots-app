@@ -29,7 +29,7 @@ class SpotsController < ApplicationController
         # image: cloudinary_url,
       )
       spot.save
-      render json: spot.as_json
+      render json: spot
     else
       render json: { message: "User must be logged in to add a new spot" }
     end
