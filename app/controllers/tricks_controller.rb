@@ -15,7 +15,7 @@ class TricksController < ApplicationController
       "user_id": trick.user_id,
       "content": trick.content,
       "spot_id": trick.spot_id,
-      "created_at": trick.created_at,
+      "created_at": trick.created_at.strftime("%d %b. %Y"),
       "updated_at": trick.updated_at,
       "username": trick.user.username,
     }
