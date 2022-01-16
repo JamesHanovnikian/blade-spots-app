@@ -5,7 +5,7 @@ class SpotsController < ApplicationController
       render json: spots.as_json
     else
       render json: { message: "User must be logged in to view all Spots" }
-    end
+    end 
   end
 
   def create
