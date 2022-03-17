@@ -1,11 +1,15 @@
 class SpotsController < ApplicationController
   def index
-    if current_user
-      spots = Spot.all
-      render json: spots.as_json
-    else
-      render json: { message: "User must be logged in to view all Spots" }
-    end 
+    # if current_user
+    spots = Spot.all
+    render json: spots.as_json
+    puts params["address"]
+    # else
+    # render json: { message: "User must be logged in to view all Spots" }
+    # end
+  end
+
+  def fetch_address
   end
 
   def create

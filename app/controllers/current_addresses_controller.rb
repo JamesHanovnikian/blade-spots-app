@@ -1,0 +1,3 @@
+class CurrentAddressesController < ApplicationController
+  
+end
