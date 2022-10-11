@@ -1,9 +1,15 @@
 class SpotsController < ApplicationController
   def index
-    # if current_user
     spots = Spot.all
+
     render json: spots.as_json
-    puts params["address"]
+    results = Geocoder.search(params["address"])
+    current_lat = results.first.coordinates[0]
+    current_long = results.first.coordinates[1]
+
+    # convert the current address to lat long
+    # .each loop compare lat long, with current lat long, find the distance
+    #
     # else
     # render json: { message: "User must be logged in to view all Spots" }
     # end
