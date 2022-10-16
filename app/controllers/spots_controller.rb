@@ -2,22 +2,16 @@ class SpotsController < ApplicationController
   def index
     spots = Spot.all
 
-    results = Geocoder.search(params["address"])
-    current_lat = results[0]["boundingbox"]
-    # current_long = results["data"]["boundingbox"][1]
-    render json: current_lat.as_json
+    # address = params["address"]
+    # results = Geocoder.search(address)
+    # current_lat = results.first.coordinates[0]
+    # current_long = results.first.coordinates[1]
+
     # spots.each do |spot|
     #   the_distance = Geocoder::Calculations.distance_between([current_lat, current_long], [spot.latitude, spot.longitude])
     #   spot.distance = the_distance
     # end
-    # render json: spots.as_json
-
-    # convert the current address to lat long
-    # .each loop compare lat long, with current lat long, find the distance
-    # Geocoder::Calculations.distance_between([47.858205,2.294359], [40.748433,-73.985655])
-    # else
-    # render json: { message: "User must be logged in to view all Spots" }
-    # end
+    render json: spots.as_json
   end
 
   def create
